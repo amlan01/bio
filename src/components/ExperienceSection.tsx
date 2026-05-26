@@ -37,7 +37,7 @@ const experiences = [
     accentColor: '#00897b',
     tags: ['WebGIS', 'GIS Systems', 'COVID-19 Response', 'CRIME GIS', 'Dashboard'],
     highlights: [
-      'Improved data-driven decision-making across policing, rural development, and education sectors',
+      'Improved data-driven decision-making across policing, rural development and education sectors',
       'Enabled real-time visibility and governance efficiency during COVID-19 response operations',
       'Led IT consulting engagements delivering end-to-end WebGIS applications for multiple state departments',
       'Designed and implemented the CRIME GIS system for law enforcement across Assam',

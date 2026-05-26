@@ -144,7 +144,7 @@ export default function HeroSection() {
         >
           
           Data-driven technology and consulting professional with 9+ years of experience delivering large-scale government and 
-          World Bank-funded digital transformation initiatives across water resources, geospatial systems and decision intelligence platforms. 
+          World Bank-funded digital transformation initiatives across governance via data orchestration, system architecture and design of geospatially empowered systems. 
           Proven expertise in IT consulting, stakeholder engagement, data engineering and decision support systems, with a strong track record 
           of translating complex domain requirements into scalable, analytics-driven solutions.
 

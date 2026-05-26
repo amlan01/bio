@@ -53,18 +53,18 @@ const projects = [
     status: 'Delivered',
     statusColor: 'success' as const,
   },
-  {
-    icon: <SmartToyIcon sx={{ fontSize: 40 }} />,
-    iconColor: '#6a1b9a',
-    bgColor: '#f3e5f5',
-    title: 'Spatiotemporal Crime Pattern Analysis',
-    org: 'M.Tech Thesis — IIT Jodhpur',
-    description:
-      "Research project analyzing the influence of multimodal aspects on spatiotemporal crime patterns in New York cities using Machine Learning techniques. Published as M.Tech thesis in AI.",
-    tags: ['Python', 'Scikit-learn', 'Spatial ML', 'pandas', 'Research'],
-    status: 'Published',
-    statusColor: 'info' as const,
-  },
+  // {
+  //   icon: <SmartToyIcon sx={{ fontSize: 40 }} />,
+  //   iconColor: '#6a1b9a',
+  //   bgColor: '#f3e5f5',
+  //   title: 'Spatiotemporal Crime Pattern Analysis',
+  //   org: 'M.Tech Thesis — IIT Jodhpur',
+  //   description:
+  //     "Research project analyzing the influence of multimodal aspects on spatiotemporal crime patterns in New York cities using Machine Learning techniques. Published as M.Tech thesis in AI.",
+  //   tags: ['Python', 'Scikit-learn', 'Spatial ML', 'pandas', 'Research'],
+  //   status: 'Published',
+  //   statusColor: 'info' as const,
+  // },
   {
     icon: <MapIcon sx={{ fontSize: 40 }} />,
     iconColor: '#00897b',

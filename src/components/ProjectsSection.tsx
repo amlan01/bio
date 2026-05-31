@@ -15,6 +15,8 @@ import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import MapIcon from '@mui/icons-material/Map';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
+import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
 
 const projects = [
   {
@@ -24,34 +26,102 @@ const projects = [
     title: 'Flood Early Warning & Decision Support System',
     org: 'Govt. of Assam / World Bank AIRBMP',
     description:
-      'State-level integrated flood early warning system combining real-time sensor data, historical hydrological records, and predictive modelling to support disaster management decision-making across Assam.',
+      'State-level integrated flood early warning system combining real-time sensor data, historical hydrological records and predictive modelling to support disaster management decision-making across Assam.',
     tags: ['Python', 'Apache Airflow', 'PostgreSQL', 'PostGIS', 'Decision Intelligence'],
     status: 'In Progress',
     statusColor: 'warning' as const,
+    url: 'https://assam.mike-cloud.com/',
+  },
+  {
+    icon: <DataThresholdingIcon sx={{ fontSize: 40 }} />,
+    iconColor: '#00897b',
+    bgColor: '#e0f2f1',
+    title: 'State Water Data Portal',
+    org: 'Hydro-Informatics Unit, Govt. of Assam',
+    description:
+      'Timeseries data platform for hydrological and hydromet data — integrating Water Level, Discharge, Rainfall, Evapotranspiration and allied observations from distributed sensor networks. Enables stakeholders to query, visualize and analyze temporal water dynamics.',
+    tags: ['Timeseries Data', 'Hydrological Data', 'Real-time Ingestion', 'Data API', 'PostgreSQL'],
+    status: 'In Progress',
+    statusColor: 'warning' as const,
+    url: '',
+  },
+  {
+    icon: <MapIcon sx={{ fontSize: 40 }} />,
+    iconColor: '#1565c0',
+    bgColor: '#e3f2fd',
+    title: 'State Water Resources Information System',
+    org: 'Hydro-Informatics Unit, Govt. of Assam',
+    description:
+      'Geospatial information system for stakeholders requiring spatial datasets across administrative boundaries, socio-economic indices, environmental layers, urban assets and river basin infrastructures. Integrates vector, raster, and multi-source geospatial data.',
+    tags: ['Geospatial Data', 'GIS', 'PostGIS', 'River Basins', 'Multi-theme', 'WebGIS'],
+    status: 'In Progress',
+    statusColor: 'warning' as const,
+    url: '',
+  },
+  {
+    icon: <MapIcon sx={{ fontSize: 40 }} />,
+    iconColor: '#1565c0',
+    bgColor: '#e3f2fd',
+    title: 'Gaon Panchayat Resource Information System (GPRIS)',
+    org: 'Assam State Space Application Centre',
+    description:
+      'WebGIS portal for the Panchayat & Rural Development Department, Government of Assam, providing geospatial intelligence and resource information across 22000+ Gaon Panchayats to support decentralized planning and rural development initiatives.',
+    tags: ['Tabular Data', 'Geospatial Data', 'PostGIS', 'PostgreSQL', 'Dashboard', 'WebGIS'],
+    status: 'Delivered',
+    statusColor: 'success' as const,
+    url: 'https://gpris.assac.in/GPRIS/',
+  },
+  {
+    icon: <SpaceDashboardIcon sx={{ fontSize: 40 }} />,
+    iconColor: '#00897b',
+    bgColor: '#e3f2fd',
+    title: 'School Dashboard for Sarba Siksha Abhiyan, Assam',
+    org: 'Assam State Space Application Centre',
+    description:
+      'Interactive dashboard for monitoring and analyzing educational outcomes based on key indicators across schools in Assam, providing insights for policy makers and administrators.',
+    tags: ['Tabular Data', 'Geospatial Data', 'PostGIS', 'PostgreSQL', 'Educational Analytics', 'Dashboard'],
+    status: 'Delivered',
+    statusColor: 'success' as const,
+    url: 'https://gis.assac.in/ssa/',
+  },
+  {
+    icon: <MapIcon sx={{ fontSize: 40 }} />,
+    iconColor: '#1565c0',
+    bgColor: '#e3f2fd',
+    title: 'Higher Education Dashboard for RUSA, Assam',
+    org: 'Assam State Space Application Centre',
+    description:
+      'Interactive WebGIS portal to improve access, equity and quality in higher education through planned development of higher education at the state level. ',
+    tags: ['Tabular Data', 'Geospatial Data', 'PostGIS', 'PostgreSQL', 'WebGIS'],
+    status: 'Delivered',
+    statusColor: 'success' as const,
+    url: 'https://rusa.assac.in/',
   },
   {
     icon: <LocalPoliceIcon sx={{ fontSize: 40 }} />,
     iconColor: '#c62828',
     bgColor: '#ffebee',
-    title: 'CRIME GIS — Law Enforcement Analytics',
+    title: 'CRIME GIS — Law Enforcement Analytics for Assam Police',
     org: 'Assam State Space Application Centre',
     description:
-      'End-to-end WebGIS system for the Assam Police enabling spatial crime mapping, pattern analysis, hotspot detection, and jurisdiction-level reporting for data-driven law enforcement.',
+      'End-to-end WebGIS system for the Assam Police enabling spatial crime mapping, pattern analysis, hotspot detection and jurisdiction-level reporting for data-driven law enforcement.',
     tags: ['WebGIS', 'Leaflet.js', 'Spatial Analysis', 'React', 'PostgreSQL'],
     status: 'Delivered',
     statusColor: 'success' as const,
+    url: '',
   },
   {
     icon: <HealthAndSafetyIcon sx={{ fontSize: 40 }} />,
     iconColor: '#2e7d32',
     bgColor: '#e8f5e9',
-    title: 'COVID-19 Real-Time Governance Dashboard',
+    title: 'COVID-19 Real-Time Governance Dashboard for Assam Police',
     org: 'Assam State Space Application Centre',
     description:
-      'Real-time visibility platform enabling coordinated COVID-19 response across Assam — tracking field resources, medical supply chains, isolation facilities, and district-level outbreak patterns.',
+      'Real-time visibility platform enabling coordinated COVID-19 response across Assam — tracking field resources, medical supply chains, isolation facilities and district-level outbreak patterns.',
     tags: ['Real-time Data', 'Dashboard', 'GIS', 'Apache Superset', 'Node.js'],
     status: 'Delivered',
     statusColor: 'success' as const,
+    url: '',
   },
   // {
   //   icon: <SmartToyIcon sx={{ fontSize: 40 }} />,
@@ -64,31 +134,9 @@ const projects = [
   //   tags: ['Python', 'Scikit-learn', 'Spatial ML', 'pandas', 'Research'],
   //   status: 'Published',
   //   statusColor: 'info' as const,
+  //   url: '',
   // },
-  {
-    icon: <MapIcon sx={{ fontSize: 40 }} />,
-    iconColor: '#00897b',
-    bgColor: '#e0f2f1',
-    title: 'State Water Data Portal',
-    org: 'Hydro-Informatics Unit, Govt. of Assam',
-    description:
-      'Timeseries data platform for hydrological and hydromet data — integrating Water Level, Discharge, Rainfall, Evapotranspiration, and allied observations from distributed sensor networks. Enables stakeholders to query, visualize, and analyze temporal water dynamics.',
-    tags: ['Timeseries Data', 'Hydrological Data', 'Real-time Ingestion', 'Data API', 'PostgreSQL'],
-    status: 'In Planning',
-    statusColor: 'warning' as const,
-  },
-  {
-    icon: <MapIcon sx={{ fontSize: 40 }} />,
-    iconColor: '#1565c0',
-    bgColor: '#e3f2fd',
-    title: 'State Water Resources Information System',
-    org: 'Hydro-Informatics Unit, Govt. of Assam',
-    description:
-      'Geospatial information system for stakeholders requiring spatial datasets across administrative boundaries, socio-economic indices, environmental layers, urban assets, and river basin infrastructures. Integrates vector, raster, and multi-source geospatial data.',
-    tags: ['Geospatial Data', 'GIS', 'PostGIS', 'River Basins', 'Multi-theme', 'WebGIS'],
-    status: 'In Planning',
-    statusColor: 'warning' as const,
-  },
+
   {
     icon: <SmartToyIcon sx={{ fontSize: 40 }} />,
     iconColor: '#e65100',
@@ -96,10 +144,11 @@ const projects = [
     title: 'HRMS & Enterprise Data Platform',
     org: 'BoldTek India / Gary Community Investment, USA',
     description:
-      'Full-stack HRMS platform with integrated ETL pipelines feeding Tableau-based executive dashboards for an international nonprofit client, enabling people analytics and operational reporting.',
+      'Full-stack HRMS platform. Developed ETL pipelines for an international nonprofit client, enabling people analytics and operational reporting.',
     tags: ['React', 'Node.js', 'ETL', 'Tableau', 'HRMS'],
     status: 'Delivered',
     statusColor: 'success' as const,
+    url: '',
   },
 ];
 
@@ -145,7 +194,14 @@ export default function ProjectsSection() {
                   },
                 }}
               >
-                <CardActionArea sx={{ flexGrow: 1 }}>
+                <CardActionArea
+                  sx={{ flexGrow: 1 }}
+                  component="a"
+                  href={project.url || undefined}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  disabled={!project.url}
+                >
                   <CardContent sx={{ p: 3 }}>
                     <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
                       <Box
@@ -195,7 +251,15 @@ export default function ProjectsSection() {
                 </CardActionArea>
                 <CardActions sx={{ px: 3, pb: 2, pt: 0 }}>
                   <Stack direction="row" alignItems="center" justifyContent="flex-end" sx={{ width: '100%' }}>
-                    <IconButton size="small" sx={{ color: 'text.disabled' }} disabled>
+                    <IconButton
+                      size="small"
+                      component="a"
+                      href={project.url || undefined}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      disabled={!project.url}
+                      sx={{ color: project.url ? project.iconColor : 'text.disabled' }}
+                    >
                       <OpenInNewIcon fontSize="small" />
                     </IconButton>
                   </Stack>
